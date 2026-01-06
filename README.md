@@ -4,11 +4,14 @@ A Defcon-style [SAO (Simple Add-On)](https://hackaday.com/2024/09/26/an-ode-to-t
 
 Also doubles as a [PixMob IR transmitter for controlling LED wristbands](https://github.com/danielweidman/pixmob-ir-reverse-engineering).
 
+![PXL_20250803_224831185](https://github.com/user-attachments/assets/3e465a2f-8051-4976-8cf5-2d73ed727d56)
+
+
 ## Credits
 
 **This project is built on top of significant reverse-engineering work**
 
-- **[Zach Resmer's Tamagometer](https://github.com/zacharesmer/tamagometer)** — The core protocol reverse-engineering that makes this work. Zach figured out the Tamagotchi IR protocol, message formats, and documented everything needed to communicate with the 2024-25 Tamagotchi Connection. Go check out his repo for all the technical details!
+- **[Zach Resmer's Tamagometer](https://github.com/zacharesmer/tamagometer)** — The core protocol reverse-engineering that makes this work. Zach figured out the Tamagotchi IR protocol, message formats, and documented everything needed to communicate with the 2024-25 Tamagotchi Connection. Go check out his repo for all the technical details + the Tamagometer web app for interacting with Tamagotchis in-depth!
 
 - **[Peter Hinch's micropython_ir](https://github.com/peterhinch/micropython_ir)** — The IR transmission library used for transmitting arbitrary IR data.
 
