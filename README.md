@@ -4,7 +4,7 @@ A Defcon-style [SAO (Simple Add-On)](https://hackaday.com/2024/09/26/an-ode-to-t
 
 Also doubles as a [PixMob IR transmitter for controlling LED wristbands](https://github.com/danielweidman/pixmob-ir-reverse-engineering).
 
-![PXL_20250803_224831185](https://github.com/user-attachments/assets/3e465a2f-8051-4976-8cf5-2d73ed727d56)
+<img src="https://github.com/user-attachments/assets/3e465a2f-8051-4976-8cf5-2d73ed727d56" alt="PXL_20250803_224831185" width="400">
 
 
 ## Credits
@@ -24,6 +24,8 @@ Also doubles as a [PixMob IR transmitter for controlling LED wristbands](https:/
 - 1 button for mode switch (GPIO 27)
 - Built-in NeoPixel LED (power on GPIO 11, data on GPIO 12)
 
+KiCad project files and production-ready gerbers are available in the `hardware/` folder.
+
 ### Tamagotchi Mode (green LED)
 - **Button A** — Trigger Visit 1
 - **Button B** — Trigger Visit 2  
@@ -41,7 +43,10 @@ pico_tamabadge/
 ├── main.py          # Main application loop
 ├── rx.py            # IR receiver & Tamagotchi protocol decoder
 ├── converters.py    # Bit string <-> IR timing conversion
-└── ir_tx/
-    ├── __init__.py  # IR transmitter (Player class)
-    └── rp2_rmt.py   # RP2040 PIO-based pulse generation
+├── ir_tx/
+│   ├── __init__.py  # IR transmitter (Player class)
+│   └── rp2_rmt.py   # RP2040 PIO-based pulse generation
+└── hardware/
+    ├── kicad/                    # KiCad project files
+    └── gerbers/                  # Production-ready files
 ```
